@@ -1,4 +1,3 @@
-```
 # 🧪 Automation Test POM
 
 > Otomasi pengujian UI untuk **[SauceDemo](https://www.saucedemo.com/)** menggunakan **Selenium-WebDriver 4**, **Mocha**, dan pola **Page Object Model (POM)**.
@@ -19,21 +18,21 @@ automation-test-pom/
 ├── package.json # Dependency & npm scripts
 └── README.md # (file ini)
 
-````
+```
 
 ---
 
 ## 🔍 Ringkasan Pengujian
 
-| Skenario | Deskripsi Singkat |
-|----------|------------------|
-| **Login berhasil** | Memverifikasi pengguna dengan kredensial valid dialihkan ke `/inventory.html`. |
+| Skenario              | Deskripsi Singkat                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| **Login berhasil**    | Memverifikasi pengguna dengan kredensial valid dialihkan ke `/inventory.html`.              |
 | **Sort produk Z → A** | Setelah login, memilih opsi _Sort (Z to A)_ lalu memastikan nama produk terurut descending. |
 
 Detail locator elemen berada di:
 
-* `pages/page_login.js` — username, password, tombol **Login**. :contentReference[oaicite:1]{index=1}
-* `pages/page_inventory.js` — dropdown sort & nama produk. :contentReference[oaicite:2]{index=2}
+- `pages/page_login.js` — username, password, tombol **Login**. :contentReference[oaicite:1]{index=1}
+- `pages/page_inventory.js` — dropdown sort & nama produk. :contentReference[oaicite:2]{index=2}
 
 Skenario di‐drive oleh **Mocha** dengan _hooks_ `beforeEach/afterEach` untuk _setup_ & _teardown_ WebDriver. :contentReference[oaicite:3]{index=3}
 
@@ -41,12 +40,12 @@ Skenario di‐drive oleh **Mocha** dengan _hooks_ `beforeEach/afterEach` untuk _
 
 ## ⚙️ Prasyarat Lingkungan
 
-| Komponen | Versi disarankan |
-|----------|-----------------|
-| **Node.js** | ≥ 18 LTS |
-| **Google Chrome** | Versi terbaru (Chromium‐based) |
-| **Selenium-WebDriver** | 4.17.0 — terpasang otomatis via `npm install` |
-| **ChromeDriver** | Tidak perlu unduh manual; Selenium Manager (4.6+) mengelola driver secara otomatis saat runtime.<br>Jika ingin mengunci versi, tambahkan `webdriver.chrome.driver` pada ENV. |
+| Komponen               | Versi disarankan                                                                                                                                                             |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Node.js**            | ≥ 18 LTS                                                                                                                                                                     |
+| **Google Chrome**      | Versi terbaru (Chromium‐based)                                                                                                                                               |
+| **Selenium-WebDriver** | 4.17.0 — terpasang otomatis via `npm install`                                                                                                                                |
+| **ChromeDriver**       | Tidak perlu unduh manual; Selenium Manager (4.6+) mengelola driver secara otomatis saat runtime.<br>Jika ingin mengunci versi, tambahkan `webdriver.chrome.driver` pada ENV. |
 
 ---
 
@@ -57,6 +56,8 @@ Skenario di‐drive oleh **Mocha** dengan _hooks_ `beforeEach/afterEach` untuk _
    ```bash
    git clone https://github.com/fauzanaljazaree/automation-test-pom.git
    cd automation-test-pom
+   ```
+
 ````
 
 2. **Install dependency**
@@ -114,3 +115,4 @@ MIT © 2025 Fauzan Al Jazaree
 * **Struktur repo**: folder `pages/` untuk Page Object, `tests/` untuk test Mocha.
 * **Cara jalan di lokal**: `git clone` → `npm install` → `npm run test-only`, Chrome & Node.js harus terpasang.
 ```
+````
