@@ -38,7 +38,7 @@ describe("SauceDemo - End-to-End", function () {
     const sortSelect = await driver.findElement(page_inventory.sortMenu);
     await sortSelect.findElement(page_inventory.sortMenuza).click();
 
-    const names = await driver.findElements(page_inventory.inve).then((els) => Promise.all(els.map((el) => el.getText())));
+    const names = await driver.findElements(page_inventory.inventoryItemName).then((els) => Promise.all(els.map((el) => el.getText())));
 
     assert.deepStrictEqual(names, [...names].sort().reverse(), "Produk tidak terurut Z-A");
   });
