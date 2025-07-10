@@ -1,7 +1,7 @@
 # 🧪 Automation Test with POM File
 
 > Otomasi pengujian UI untuk **[SauceDemo](https://www.saucedemo.com/)** menggunakan **Selenium-WebDriver 4**, **Mocha**, dan pola **Page Object Model (POM)**.
-> POM memisahkan _locator_ & aksi halaman ke dalam kelas tersendiri sehingga test case lebih mudah dibaca dan dipelihara.
+> POM memisahkan _locator_ & aksi halaman ke dalam kelas tersendiri sehingga test case lebih mudah dibaca dan dikembangkan.
 
 ---
 
